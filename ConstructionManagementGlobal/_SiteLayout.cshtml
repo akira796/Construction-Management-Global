@@ -24,104 +24,194 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width" />
 </head>
-    <body>
-        <header>
+<body>
+    @*<header>
             <div class="content-wrapper">
                 <div class="content-wrapper">
-                    
+
                     <div class="MenuBox">
 
                         <nav>
                             <ul id="menu">
                                 <li><a href="~/">Home</a></li>
 
-                                @*<li><a href="~/">Services</a></li>*@
+                                <li><a href="~/">Services</a></li>
                                 <li><a href="~/DigitalPortfolio.cshtml">Historical Projects &amp; Digital Portfolio</a></li>
-                                
+
                                 <li><a href="~/Default.cshtml"><img src="~/Images/CMG.png" style="width:256px;" /></a></li>
                                 <li><a href="~/OurReferences.cshtml">Our References</a></li>
-                                <li><a href="~/About.cshtml">About</a></li>
+                                <li>
+                                    <a href="~/About.cshtml">About</a>
+                                    <ul class="nav-dropdown">
+                                        <li><a>Mission</a> </li>
+                                    </ul>
+                                </li>
                                 <li><a href="~/Contact.cshtml">Contact</a></li>
 
                             </ul>
                         </nav>
                     </div>
                 </div>
-               
+
             </div>
-        </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-                
-                    <hr />
-                    <p class="textSection" style="font-size:12px;"> Construction Management Global, LLC is fully licensed & bonded. We specialize in the Development, Construction, Renovation, and FFE Procurement for the Hospitality industry, High-end residential/condominiums, and apartments small or commerical, world wide.
-                    
-                
-            </section>
+        </header>*@
+
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="~/Default.cshtml">
+
+                    <img src="~/Images/cmg.png" style="width:196px;" />
+                </a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="~/Default.cshtml">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#!">About</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="~/About.cshtml">About</a>
+                            </li>
+                            <li>
+                                <a href="~/">s</a>
+                            </li>
+
+                            @*<li>
+                    <a href="~/Graphic Design.cshtml">Graphic Design</a>
+                </li>*@
+                            <li>
+                                <a href="~/">s</a>
+                            </li>
+                            @*<li>
+                    <a href="~/Web Hosting.cshtml">Web Hosting</a>
+                </li>*@
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="~/DigitalPortfolio.cshtml">Historical Projects &amp; Digital Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="~/OurReferences.cshtml">Our References</a>
+                    </li>
+                    <li>
+                        <a href="~/Contact.cshtml">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <ul class="sitemap">
+    </section>
 
-                        <li>
-                            <a href="/Default.cshtml">Home</a>
-                        </li>
-                        <li>
-                            <a href="~/About.cshtml">About</a>
-                        </li>
-                        <li>
-                            <a href="~/">Services</a>
-                        </li>
-                        
-                    </ul>
 
-                    <ul class="sitemap">
-                        <li>
-                            <a href="~/">Historical Projects &amp; Digital Portfolio</a>
-                        </li>
-                        <li>
-                            
-                            <a href="~/OurReferences.cshtml">Our References</a>
-                        </li>
-                        <li>
-                            <a href="~/Contact.cshtml">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+    <div id="body">
+        @RenderSection("featured", required: false)
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+
+            <hr />
+            <p class="textSection" style="font-size:12px;"> Construction Management Global, LLC is fully licensed & bonded. We specialize in the Development, Construction, Renovation, and FFE Procurement for the Hospitality industry, High-end residential/condominiums, and apartments small or commerical, world wide.
+
+
+        </section>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <ul class="sitemap">
+
+                    <li>
+                        <a href="/Default.cshtml">Home</a>
+                    </li>
+                    <li>
+                        <a href="~/About.cshtml">About</a>
+
+                    </li>
+                    <li>
+                        <a href="~/">Services</a>
+                    </li>
+
+                </ul>
+
+                <ul class="sitemap">
+                    <li>
+                        <a href="~/">Historical Projects &amp; Digital Portfolio</a>
+                    </li>
+                    <li>
+
+                        <a href="~/OurReferences.cshtml">Our References</a>
+                    </li>
+                    <li>
+                        <a href="~/Contact.cshtml">Contact</a>
+                    </li>
+                </ul>
             </div>
-          <p style="color:white; text-align:center; padding-right:20%;">Design by <a href="www.akirawebsolutions.com"> AkiraWebSolutions </a></p>
-            <div class="float-right">
-                
-                <p style="color:white;">&copy; @DateTime.Now.Year - Construction Management Global LLC. <img src="~/Images/turninglobe.gif" style="width:64px;" /></p>
-            </div>
-            
-        </footer>
-        @RenderSection("Scripts", required: false)
-    </body>
+        </div>
+        <p style="color:white; text-align:center; padding-right:20%;">Design by <a href="www.akirawebsolutions.com"> AkiraWebSolutions </a></p>
+        <div class="float-right">
+
+            <p style="color:white;">&copy; @DateTime.Now.Year - Construction Management Global LLC. <img src="~/Images/turninglobe.gif" style="width:64px;" /></p>
+        </div>
+
+    </footer>
+    @RenderSection("Scripts", required: false)
+</body>
 </html>
 
+
+    <script>(function ($) { // Begin jQuery
+        $(function () { // DOM ready
+            // If a link has a dropdown, add sub menu toggle.
+            $('nav ul li a:not(:only-child)').click(function (e) {
+                $(this).siblings('.nav-dropdown').toggle();
+                // Close one dropdown when selecting another
+                $('.nav-dropdown').not($(this).siblings()).hide();
+                e.stopPropagation();
+            });
+            // Clicking away from dropdown will remove the dropdown class
+            $('html').click(function () {
+                $('.nav-dropdown').hide();
+            });
+            // Toggle open and close nav styles on click
+            $('#nav-toggle').click(function () {
+                $('nav ul').slideToggle();
+            });
+            // Hamburger to X toggle
+            $('#nav-toggle').on('click', function () {
+                this.classList.toggle('active');
+            });
+        }); // end DOM ready
+        })(jQuery); // end jQuery</script>
+
+
+
+
 <style>
-     .MenuBox {
+    .MenuBox {
         text-align: center;
     }
-     header{
-         background-color:black;
-     }
-     ul.sitemap {
+
+    header {
+        background-color: black;
+    }
+
+    ul.sitemap {
         display: inline-block;
     }
-     ul.menu{
-         text-align:center;
-     }
-     a.menu{
-         color:forestgreen;
-     }
+
+    ul.menu {
+        text-align: center;
+    }
+
+    a.menu {
+        color: forestgreen;
+    }
+
     a:link, a:visited, a:active, a:hover {
         color: white;
     }
-
-
 </style>
