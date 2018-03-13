@@ -1,0 +1,286 @@
+﻿@{
+    Page.Title = "Historical Projects & Digital Portfolio";
+    Layout = "~/_SiteLayout.cshtml";
+}
+
+
+
+
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
+
+    /* The grid: Four equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+
+        /* Style the images inside the grid */
+        .column img {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+            .column img:hover {
+                opacity: 1;
+            }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* The expanding image container */
+    .container {
+        position: relative;
+        display: none;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* Closable button inside the expanded image */
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+</style>
+
+
+
+<br />
+<div style="text-align:center">
+    <h2 style="font-family:'Palatino Linotype';">Our Digital Portfolio Featuring Global Construction &amp; Project Management</h2>
+    <p>Click an image below!</p>
+    
+</div>
+
+<!-- The four columns -->
+<div class="row">
+    <div class="column">
+
+        <img src="~/Images/Carefree Conference Resort1.jpg" alt="Carefree Conference Resort. Carefree, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">New construction of 66 guest rooms and additional 20,000 square feet of meeting rooms  and other public areas</p>
+
+        <img src="~/Images/Emmalani Court Luxury Villas2.jpg" alt="Emmalani Court Luxury Villas Princeville, HI" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">New construction of 42 luxury villas</p>
+
+        <img src="~/Images/Four Seasons Resort Nevis2.jpeg" alt="Four Seasons Resort Nevis. Nevis, St. Kitts" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Performed demolition work, design development and improvement ideas to prevent scale
+            or devastation, and negotiated contracts with subcontractors and suppliers to perform
+            reconstruction work
+        </p>
+
+    </div>
+    <div class="column">
+        <img src="~/Images/Carefree Conference Resort2.jpg" alt="Carefree, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">Renovation of 200 guest rooms and all public areas</p>
+
+        <img src="~/Images/Fairmont Princess Resort1.jpg" alt="Fairmont Princess Resort Scottsdale, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Project manager for one of two developers, supervised development from design to
+            turnover
+        </p>
+
+        <img src="~/Images/Four Seasons Resort at Troon North1.jpeg" alt="Four Seasons Resort at Troon North Scottsdale, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Program manager, project manager, and construction manager
+        </p>
+    </div>
+    <div class="column">
+        <img src="~/Images/Crown Court Luxury Apartments1.jpg" alt="Crown Court Luxury Apartments Scottsdale, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">440 luxury apartments, 2 clubhouses, 2 pools/tennis courts. General contractor for ground up construction</p>
+
+        <img src="~/Images/Fairmont Princess Resort2.jpg" alt="Fairmont Princess Resort Scottsdale, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Contractor for new construction of Hacienda Restaurant and Night Club, tennis facilities
+            and specialty shops
+        </p>
+
+        <img src="~/Images/Four Seasons Resort at Troon North2.jpg" alt="Four Seasons Resort at Troon North Scottsdale, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Supervised design and development construction from inception to successful turnover.
+             $110 million resort and time share project
+        </p>
+    </div>
+    <div class="column">
+        <img src="~/Images/Emmalani Court Luxury Villas1.jpg" alt="Emmalani Court Luxury Villas Princeville, HI" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">General contractor for ground up construction</p>
+
+        <img src="~/Images/Four Seasons Resort Nevis1.jpg" alt="Four Seasons Resort Nevis. Nevis, St. Kitts" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Project and construction manager on two occasions after a hurricane devastated the resort,
+            causing $80 million in damages
+        </p>
+
+        <img src="~/Images/Hanalei Bay Resort1.jpg" alt="Princeville, HI" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Renovation of 240 villas.
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <img src="~/Images/Hanalei Bay Resort2.png" alt="Hanalei Bay Resort Princeville, HI" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Renovation of public spaces and property grounds.
+        </p>
+
+        <img src="~/Images/Scottsdale Conference Resort2.jpg" alt="Scottsdale Conference Resort Scottsdale, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Contractor for new conference facilities
+        </p>
+
+        <img src="~/Images/Princeville Golf Clubhouse1.jpg" alt="Princeville Golf Clubhouse Princeville, HI" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            New construction of one of the largest and most luxurious golf clubhouses, complete with
+            spa and fitness on famous Princeville Golf Course in Kauai, USA
+        </p>
+
+        <img src="~/Images/Allison Condominiums2.jpg" alt="Allison Condominiums Scottsdale, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            General contractors for complete renovation of 340 luxury apartment units to luxury
+            condominium units
+        </p>
+
+        <img src="~/Images/Schuler Home1.png" alt="Schuler Homes Hawaii (All Islands)" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            General contractor for over 2,500 residential homes and condominiums
+        </p>
+
+    </div>
+
+
+    <div class="column">
+        <img src="~/Images/Pali Ke Kua Condominiums1.jpg" alt="Pali Ke Kua Condominiums Princeville, HI" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Reconstruction of entire development after the complete devastation of hurricane Iniki in
+            1992
+        </p>
+
+        <img src="~/Images/Seabrook Island Resort1.jpg" alt="Seabrook Island Resort John’s Island, SC" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Renovation of over 1,200 villas.
+            Renovation of main hotel building
+        </p>
+
+        <img src="~/Images/Seychelles Resort2.jpg" alt="Seychelles Resort Poivre Island, Seychelles" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Sr. project manager for ultra-luxury private island resort which included hotel cottages, and
+            ten 20,000 square foot villas
+        </p>
+
+        <img src="~/Images/Eagles Nest Golf Club1.jpg" alt="Eagles Nest Golf Club Silverthorne, CO" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Renovation of 280 guest rooms, ballrooms, and all public areas.
+            Contractor for new construction of two meeting rooms built on rooftop
+        </p>
+
+        <img src="~/Images/Hawthorne on North 3rd1.jpeg" alt="Hawthorne on North 3rd Phoenix, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            General contractors for renovation of 200 luxury apartment units to luxury condominium
+            units
+        </p>
+    </div>
+
+    <div class="column">
+        <img src="~/Images/Pali Ke Kua Condominiums2.jpg" alt="Pali Ke Kua Condominiums Princeville, HI" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Rebuilt 98 units from ground up
+        </p>
+
+        <img src="~/Images/Seabrook Island Resort2.jpg" alt="Seabrook Island Resort John’s Island, SC" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            New construction of beach club conference facility.
+            New construction of maintenance facility
+        </p>
+
+        <img src="~/Images/Warwick Hotel1.jpg" alt="Warwick Hotel Houston, TX" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Renovation of over 300 guest rooms
+        </p>
+
+        <img src="~/Images/Radisson Airport Hotel1.jpg" alt="Radisson Airport Hotel Denver, CO" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Renovation of 320 guest rooms, spa, fitness facilities, all public areas, and complete exterior
+            of the hotel building
+        </p>
+
+        <img src="~/Images/Hawthorne on North 3rd2.jpg" alt="Hawthorne on North 3rd Phoenix, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            General contractors for renovation of 200 luxury apartment units to luxury condominium
+            units
+        </p>
+    </div>
+
+    <div class="column">
+        <img src="~/Images/Scottsdale Conference Resort1.jpg" alt="Scottsdale Conference Resort Scottsdale, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Renovation of 340 guest rooms and public spaces (three times in 20 years)
+        </p>
+
+        <img src="~/Images/Seychelles Resort1.jpg" alt="Seychelles Resort Poivre Island, Seychelles" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Sr. project manager for ultra-luxury private island resort which included hotel cottages, and
+            ten 20,000 square foot villas
+        </p>
+
+        <img src="~/Images/Warwick Hotel2.jpg" alt="Warwick Hotel Houston, TX" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            Renovation and restoration of public areas and exterior of the building
+        </p>
+
+        <img src="~/Images/Allison Condominiums1.jpg" alt="Allison Condominiums Scottsdale, AZ" style="width:100%" onclick="myFunction(this);">
+        <p class="textSection">
+            General contractors for complete renovation of 340 luxury apartment units to luxury
+            condominium units
+        </p>
+
+       
+    </div>
+
+</div>
+<style>
+    #body{
+        background-color:#c1c1c1;
+    }
+</style>
+
+<script>
+    function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+    }
+</script>
