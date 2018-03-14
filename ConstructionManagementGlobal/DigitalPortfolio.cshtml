@@ -18,19 +18,20 @@
     }
 
     /* The grid: Four equal columns that floats next to each other */
-    .column {
+    .columnport {
         float: left;
-        width: 25%;
+        width: 100%;
         padding: 10px;
+        max-width:420px;
     }
 
         /* Style the images inside the grid */
-        .column img {
+        .columnport img {
             opacity: 0.8;
             cursor: pointer;
         }
 
-            .column img:hover {
+            .columnport img:hover {
                 opacity: 1;
             }
 
@@ -65,6 +66,7 @@
         font-size: 35px;
         cursor: pointer;
     }
+    
 </style>
 
 
@@ -89,7 +91,7 @@
 
 <!-- The four columns -->
 <div class="row">
-    <div class="column">
+    <div class="columnport">
 
         <img src="~/Images/Carefree Conference Resort1.jpg" alt="Carefree Conference Resort. Carefree, AZ" style="width:100%" onclick="myFunction(this);">
         <p class="textSection">New construction of 66 guest rooms and additional 20,000 square feet of meeting rooms  and other public areas</p>
@@ -105,7 +107,7 @@
         </p>
 
     </div>
-    <div class="column">
+    <div class="columnport">
         <img src="~/Images/Carefree Conference Resort2.jpg" alt="Carefree, AZ" style="width:100%" onclick="myFunction(this);">
         <p class="textSection">Renovation of 200 guest rooms and all public areas</p>
 
@@ -120,7 +122,7 @@
             Program manager, project manager, and construction manager
         </p>
     </div>
-    <div class="column">
+    <div class="columnport">
         <img src="~/Images/Crown Court Luxury Apartments1.jpg" alt="Crown Court Luxury Apartments Scottsdale, AZ" style="width:100%" onclick="myFunction(this);">
         <p class="textSection">440 luxury apartments, 2 clubhouses, 2 pools/tennis courts. General contractor for ground up construction</p>
 
@@ -136,7 +138,7 @@
              $110 million resort and time share project
         </p>
     </div>
-    <div class="column">
+    <div class="columnport">
         <img src="~/Images/Emmalani Court Luxury Villas1.jpg" alt="Emmalani Court Luxury Villas Princeville, HI" style="width:100%" onclick="myFunction(this);">
         <p class="textSection">General contractor for ground up construction</p>
 
@@ -160,7 +162,7 @@
 </div>
 
 <div class="row">
-    <div class="column">
+    <div class="columnport">
         <img src="~/Images/Hanalei Bay Resort2.png" alt="Hanalei Bay Resort Princeville, HI" style="width:100%" onclick="myFunction(this);">
         <p class="textSection">
             Renovation of public spaces and property grounds.
@@ -192,7 +194,7 @@
     </div>
 
 
-    <div class="column">
+    <div class="columnport">
         <img src="~/Images/Pali Ke Kua Condominiums1.jpg" alt="Pali Ke Kua Condominiums Princeville, HI" style="width:100%" onclick="myFunction(this);">
         <p class="textSection">
             Reconstruction of entire development after the complete devastation of hurricane Iniki in
@@ -228,7 +230,7 @@
         <img src="~/Images/spa810 Washington Ave in Texas.png" alt="spa810 Washington Ave in Texas" style="width:100%" onclick="myFunction(this);">
     </div>
 
-    <div class="column">
+    <div class="columnport">
         <img src="~/Images/Pali Ke Kua Condominiums2.jpg" alt="Pali Ke Kua Condominiums Princeville, HI" style="width:100%" onclick="myFunction(this);">
         <p class="textSection">
             Rebuilt 98 units from ground up
@@ -260,7 +262,7 @@
         <img src="~/Images/spa810 Arrowhead in Arizona.png" alt="spa810 Arrowhead in Arizona" style="width:100%" onclick="myFunction(this);">
     </div>
 
-    <div class="column">
+    <div class="columnport">
         <img src="~/Images/Scottsdale Conference Resort1.jpg" alt="Scottsdale Conference Resort Scottsdale, AZ" style="width:100%" onclick="myFunction(this);">
         <p class="textSection">
             Renovation of 340 guest rooms and public spaces (three times in 20 years)

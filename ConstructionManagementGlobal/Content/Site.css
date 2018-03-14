@@ -11,6 +11,8 @@ body {
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
+    width:100%;
+    height:100%;
 }
 
 a {
@@ -577,7 +579,12 @@ tr.pager td {
 *   Mobile Styles   *
 ********************/
 @media only screen and (max-width: 850px) {
-
+    .column{
+        width:100%;
+    }
+    .aboutcolumn{
+        width:100%;
+    }
     /* header
     ----------------------------------------------------------*/
     header .float-left,
@@ -890,7 +897,9 @@ html {
         max-width: 100%;
     }
 }
-
+.body{
+    width:100%;
+}
 @charset "UTF-8";
 /*nav css*/
 .navigation {
@@ -901,7 +910,7 @@ html {
 
 .brand {
     position: absolute;
-    padding-left: 50px;
+    padding-left:55%;
     float: left;
     line-height: 70px;
     text-transform: uppercase;
@@ -920,8 +929,9 @@ html {
 }
 
 nav {
-    float: right;
+    float:right;
     padding-top:5%;
+    
 }
 
     nav ul {
@@ -983,8 +993,25 @@ nav {
     height: 70px;
     width: 70px;
 }
+@media screen and (max-width: 800px) {
+  .columnport {
+    
+    width: 50%;
+  }
+}
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnport {
+    
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 798px) {
+   
+    .brand{
+        padding-left:0px;
+    }
     .nav-mobile {
         display: block;
     }
