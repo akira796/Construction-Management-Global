@@ -23,40 +23,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width" />
-   <link rel="icon" type="image/png" href="~/Images/CMG.PNG"/>
+   <link rel="icon" type="image/png" href="~/Images/testLogo5.svg"/>
     @*<title>Website design Phoenix AZ, graphic design, web hosting, responsive websites</title>*@
 </head>
+
 <body>
-    @*<header>
-            <div class="content-wrapper">
-                <div class="content-wrapper">
+    <style>
+        .MenuBox {
+            text-align: center;
+        }
 
-                    <div class="MenuBox">
+        header {
+            background-color: black;
+        }
 
-                        <nav>
-                            <ul id="menu">
-                                <li><a href="~/">Home</a></li>
+        ul.sitemap {
+            display: inline-block;
+        }
 
-                                <li><a href="~/">Services</a></li>
-                                <li><a href="~/DigitalPortfolio.cshtml">Historical Projects &amp; Digital Portfolio</a></li>
+        ul.menu {
+            text-align: center;
+        }
 
-                                <li><a href="~/Default.cshtml"><img src="~/Images/CMG.png" style="width:256px;" /></a></li>
-                                <li><a href="~/OurReferences.cshtml">Our References</a></li>
-                                <li>
-                                    <a href="~/About.cshtml">About</a>
-                                    <ul class="nav-dropdown">
-                                        <li><a>Mission</a> </li>
-                                    </ul>
-                                </li>
-                                <li><a href="~/Contact.cshtml">Contact</a></li>
+        a.menu {
+            color: forestgreen;
+        }
 
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-            </div>
-        </header>*@
+        a:link, a:visited, a:active, a:hover {
+            color: white;
+        }
+    </style>
 
 
     <section class="navigation">
@@ -64,7 +60,7 @@
             <div class="brand">
                 <a href="~/Default.cshtml">
 
-                    <img src="~/Images/cmg.png" style="width:196px;" />
+                    <img src="~/Images/Captureblack.png" style="width:196px;" />
                 </a>
             </div>
             <nav>
@@ -81,18 +77,20 @@
                                 <a href="~/About.cshtml" style="letter-spacing: 3px; font-family:aleo-regular; font-size:18px;">John Dunatov</a>
                             </li>
                             <li>
-                                <a href="~/About.cshtml#Services">Our Services</a>
+                                <a href="~/About.cshtml#Wyatt" style="letter-spacing: 3px; font-family:aleo-regular; font-size:18px;">Wyatt Whitham</a>
+                            </li>
+                            <li>
+                                <a href="~/About.cshtml#Luka" style="letter-spacing: 3px; font-family:aleo-regular; font-size:18px;">Luka Longin</a>
+                            </li>
+                            <li>
+                                <a href="~/About.cshtml#Services" style="letter-spacing: 3px; font-family:aleo-regular; font-size:18px;">Our Services</a>
                             </li>
 
-                            @*<li>
-                    <a href="~/Graphic Design.cshtml">Graphic Design</a>
-                </li>*@
+                
                             <li>
-                                <a href="~/About.cshtml#Projects">Projects Commited/In Progress</a>
+                                <a href="~/About.cshtml#Projects" style="letter-spacing: 3px; font-family:aleo-regular; font-size:18px;">Projects Commited/In Progress</a>
                             </li>
-                            @*<li>
-                    <a href="~/Web Hosting.cshtml">Web Hosting</a>
-                </li>*@
+                 
                         </ul>
                     </li>
                     <li>
@@ -116,7 +114,7 @@
             @RenderBody()
 
             <hr />
-            <p class="textSection" style="font-size:12px;"> Construction Management Global, LLC is fully licensed & bonded. We specialize in the Development, Construction, Renovation, and FFE Procurement for the Hospitality industry, High-end residential/condominiums, and apartments small or commerical, world wide.
+            <p class="textSection" style="font-size:16px;"> Construction Management Global specializes in the Development, Construction, Renovation, and FFE Procurement for the Hospitality industry, High-end residential/condominiums, and apartments small or commerical, world wide.
 
 
         </section>
@@ -134,14 +132,14 @@
 
                     </li>
                     <li>
-                        <a href="~/">Services</a>
+                        <a href="~/About.cshtml#Services">Services</a>
                     </li>
 
                 </ul>
 
                 <ul class="sitemap">
                     <li>
-                        <a href="~/">Historical Projects &amp; Digital Portfolio</a>
+                        <a href="~/DigitalPortfolio.cshtml">Historical Projects &amp; Digital Portfolio</a>
                     </li>
                     <li>
 
@@ -151,12 +149,25 @@
                         <a href="~/Contact.cshtml">Contact</a>
                     </li>
                 </ul>
+
+                <ul class="sitemap">
+                    <li>
+                        <a href="~/About.cshtml">John Dunatov</a>
+                    </li>
+                    <li>
+
+                        <a href="~/About.cshtml#Wyatt">Wyatt Whitham</a>
+                    </li>
+                    <li>
+                        <a href="~/About.cshtml#Luka">Luka Longin</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <p style="color:white; text-align:center; padding-right:20%;">Design by <a href="http://www.akirawebsolutions.com/"> AkiraWebSolutions </a></p>
         <div class="float-right">
 
-            <p style="color:white;">&copy; @DateTime.Now.Year - Construction Management Global LLC. <img src="~/Images/turninglobe.gif" style="width:64px;" /></p>
+            <p style="color:white;">&copy; @DateTime.Now.Year - Construction Management Global. <img src="~/Images/turninglobe.gif" style="width:64px;" /></p>
         </div>
 
     </footer>
@@ -192,28 +203,3 @@
 
 
 
-<style>
-    .MenuBox {
-        text-align: center;
-    }
-
-    header {
-        background-color: black;
-    }
-
-    ul.sitemap {
-        display: inline-block;
-    }
-
-    ul.menu {
-        text-align: center;
-    }
-
-    a.menu {
-        color: forestgreen;
-    }
-
-    a:link, a:visited, a:active, a:hover {
-        color: white;
-    }
-</style>

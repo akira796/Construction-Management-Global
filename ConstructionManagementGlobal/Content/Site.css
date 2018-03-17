@@ -336,7 +336,7 @@ aside {
     #loginForm .validation-summary-errors li {
         display: inline;
         list-style: none;
-        margin: 0;
+        
     }
 
     #loginForm input {
@@ -613,7 +613,7 @@ tr.pager td {
         #login li {
             display: inline;
             list-style: none;
-            margin: 0;
+            
             padding: 0;
         }
 
@@ -799,10 +799,10 @@ h1.textSection {
 p.textSection {
     text-indent: 50px;
     
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     /*padding: 50px;*/
-    font-family:aleo-regular;
-    font-size:18px;
+    font-family:aleo-bold;
+    font-size:22px;
 }
 
 a.textSection {
@@ -822,9 +822,7 @@ html {
     box-sizing: inherit;
 }
 
-.row {
-    /*padding-top:125px;*/
-}
+
 
 .column {
     float: left;
@@ -900,7 +898,7 @@ html {
 .body{
     width:100%;
 }
-@charset "UTF-8";
+
 /*nav css*/
 .navigation {
     height: 160px;
@@ -1107,3 +1105,6 @@ nav {
         #nav-toggle.active span:after {
             transform: rotate(-45deg);
         }
+
+
+
