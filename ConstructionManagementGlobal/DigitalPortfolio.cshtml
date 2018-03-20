@@ -72,6 +72,16 @@
         img:hover {
             cursor: zoom-in;
         }
+        .container3 {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
     </style>
 
 
@@ -83,15 +93,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
+                
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             </div>
             <div class="modal-body">
-                <img src="" class="enlargeImageModalSource" style="width: 100%;">
+                <img src="" alt="" class="enlargeImageModalSource" style="width: 100%;">
             </div>
         </div>
     </div>
 </div>
-<div class="container">
+@*<div class="container">
     <h1></h1>
     <div class="jumbotron"><h1>Enlarge Image Modal</h1><h2>D14RAP</h2></div>
     <p>Click the below images to enlarge them</p>
@@ -100,7 +111,7 @@
         <div class="col-md-4"><img style="width:100%; height:auto;" src="~/Images/4.jpg"></div>
         <div class="col-md-4"><img style="width:100%; height:auto;" src="~/Images/4.jpg"></div>
     </div>
-</div>
+</div>*@
 
 <br />
 <div style="text-align:center">
@@ -128,8 +139,7 @@
     @*Col 1*@
     <div class="columnport">
 
-        <img i src="~/Images/Carefree Conference Resort1.jpg" alt="Carefree Conference Resort. Carefree, AZ" style="width:100%;" />
-
+        <img src="~/Images/Carefree Conference Resort1.jpg" alt="Carefree Conference Resort. Carefree, AZ" style="width:100%;" />
         <p class="textSection">New construction of 66 guest rooms and additional 20,000 square feet of meeting rooms and other public areas</p>
 
         <img src="~/Images/Emmalani Court Luxury Villas2.jpg" alt="Emmalani Court Luxury Villas Princeville, HI" style="width:100%">
@@ -179,7 +189,7 @@
         <img src="~/Images/Carefree Conference Resort2.jpg" alt="Carefree, AZ" style="width:100%" >
         <p class="textSection">Renovation of 200 guest rooms and all public areas</p>
 
-        <img src="~/Images/Fairmont Princess Resort1.jpg" alt="Fairmont Princess Resort Scottsdale, AZ" style="width:100%" >
+        <img src="~/Images/4.jpg" alt="Fairmont Princess Resort Scottsdale, AZ" style="width:100%" >
         <p class="textSection">
             Project manager for one of two developers, supervised development from design to
             turnover
@@ -221,7 +231,7 @@
             units
         </p>
 
-        <img src="~/Images/spa810 Ankeny in Iowa.png" alt="spa810 Ankeny in Iowa" style="width:100%" >
+        <img src="~/Images/spa810 Ankeny in Iowa.jpg" alt="spa810 Ankeny in Iowa" style="width:100%" >
 
         <img src="~/Images/spa810 Washington Ave in Texas.png" alt="spa810 Washington Ave in Texas" style="width:100%" >
     </div>
@@ -255,7 +265,7 @@
             New construction of maintenance facility
         </p>
 
-        <img src="~/Images/Warwick Hotel1.jpg" alt="Warwick Hotel Houston, TX" style="width:100%" >
+        <img src="~/Images/warwick3.jpg" alt="Warwick Hotel Houston, TX" style="width:100%" >
         <p class="textSection">
             Renovation of over 300 guest rooms
         </p>
@@ -272,7 +282,7 @@
             units
         </p>
 
-        <img src="~/Images/spa810 Arrowhead in Arizona.png" alt="spa810 Arrowhead in Arizona" style="width:100%" >
+        <img src="~/Images/spa810 Arrowhead in Arizona.png" alt="Spa810 Arrowhead in Arizona" style="width:100%" >
     </div>
 
     @*Col 4*@
